@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: "Madimi One", sans-serif;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(132, 241, 255, .1);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1.5px outset rgba(132, 241, 255, 1);
+}
+header h1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+main {
+    background-color: rgba(175, 18, 90, .1);
+    border: 10px outset rgba(175, 18, 90, 1);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(88, 43, 17, .1);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1.5px outset rgba(88, 43, 17, 1);
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.navBar a{
+    border: 1.5px solid #C0F5FA;
+    padding: 5px;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+}
+
+.navBar a:link {
+    color: #BD8B9C;
+}
+
+.navBar a:visited {
+    color: #AF125A;
+}
+
+.navBar a:hover {
+    background-color: #87F1FF;
+    text-decoration: underline;
+}
+
+.navBar a:active {
+    color: #C0F5FA;
+    text-decoration: underline;
+}
+
+.gavin:hover {
+    background-image: linear-gradient( to right, #E7484F, #E7484F 16.65%, #F68B1D 16.65%, #F68B1D 33.3%, #FCED00 33.3%, #FCED00 49.95%, #009E4F 49.95%, #009E4F 66.6%, #00AAC3 66.6%, #00AAC3 83.25%, #732982 83.25%, #732982 100%, #E7484F 100% );
+    animation: slidebg 2s linear infinite;
+}
+
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+
+p {
+    font-family: "Plus Jakarta Sans";
+}
+
+html, body{
+    height: 100%;
+}
+
+#root{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 4fr .5fr;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+}
+
+.calendar-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 5px solid black;
+    min-width: 50vw;
+    min-height: 70vh;
+    border-radius: 10px;
+}
+
+.week-1, .week-2, .week-3, .week-4, .week-5, .week-6{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.week-1 div, .week-2 div, .week-3 div, .week-4 div, .week-5 div, .week-6 div {
+    display: flex;
+    border: 1px solid black;
+    min-width: 50px;
+    min-height: 100px;
+    border-radius: 5px;
+}
